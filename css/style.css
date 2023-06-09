@@ -1,0 +1,131 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+canvas{
+  display: block;
+  position: fixed;
+
+}
+
+.taskbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 50px;
+  background: linear-gradient(to right, #030303, #5d5757);
+  z-index: 1;
+}
+
+.taskbar .box:nth-child(1){
+  position: absolute;
+  height: 50px;
+  width: 300px;
+  background: rgb(9, 57, 55);
+  line-height: 50px;
+  padding-left: 20px;
+  color: white;
+  font-family: cursive;
+}
+
+#radiusDisplay{
+  background: rgb(35, 137, 226);
+  border: none;
+  position: relative;
+  top: -5px;
+  color: white;
+  font-size: 15px;
+}
+
+.taskbar .box:nth-child(2){
+  position: absolute;
+  left: 320px;
+  background: #333;
+  height: 50px;
+  width: 350px;
+  line-height: 50px;
+  padding-left: 20px;
+  font-family: cursive;
+  color: white;
+}
+
+/* green red blue yellow cyan magenta */
+
+.box:nth-child(2) span{
+  border: 2px solid black;
+  color: black;
+  cursor: pointer;
+}
+
+.box:nth-child(2) span:nth-child(1){
+  background: green;
+}
+.box:nth-child(2) span:nth-child(2){
+  background: red;
+}
+.box:nth-child(2) span:nth-child(3){
+  background: blue;
+}
+.box:nth-child(2) span:nth-child(4){
+  background: yellow;
+}
+.box:nth-child(2) span:nth-child(5){
+  background: cyan;
+}
+.box:nth-child(2) span:nth-child(6){
+  background: magenta;
+}
+.box:nth-child(2) span:nth-child(7){
+  background: rgba(0,0,0,0.6);
+}
+
+/* mousePointer */
+
+.mousePointer{
+  position: fixed;
+  height: 10px;
+  width: 10px;
+  background: black;
+  border-radius: 5px;
+}
+
+.taskbar .box:nth-child(3){
+  position: absolute;
+  left: 690px;
+  height: 50px;
+  width: 50px;
+  background: rgb(34, 151, 151);
+  border: 1px solid rgb(0, 255, 110);
+  box-sizing: border-box;
+}
+.taskbar .box:nth-child(4){
+  position: absolute;
+  left: 740px;
+  height: 50px;
+  width: 50px;
+  background: rgb(59, 149, 149);
+  border: none;
+  box-sizing: border-box;
+}
+
+.box img{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.save{
+  z-index: 10;
+  float : right;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 10px;
+}
+
+.save button{
+  padding: 5px;
+}

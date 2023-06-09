@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Paint Application</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+  <div class="taskbar">
+    <span class="box">
+      Radius SIZE : &nbsp;&nbsp; <input type="range" min="1" max="30" step="1" value="5" onclick="radiusChanger(this.value)" id="slider">
+      <input type="button" name="display" value="5" id="radiusDisplay">
+    </span>
+    <span class="box">
+      Colors :
+      <span onclick="color1()">___</span>
+      <span onclick="color2()">___</span>
+      <span onclick="color3()">___</span>
+      <span onclick="color4()">___</span>
+      <span onclick="color5()">___</span>
+      <span onclick="color6()">___</span>
+      <span onclick="color7()">___</span>
+    </span>
+    <span class="box" id="pencil" onclick="pencil()">
+      <img src="images/pencil1.png" alt="#" height="40px" width="40px" title="PENCIL">
+    </span>
+    <span class="box" id="eraser" onclick="eraser()">
+      <img src="images/eraser1.png" alt="#" height="40px" width="40px" title="ERASER">
+    </span>
+    <span class='save'>
+      <a id="download" download="img.png"><button type="button" onClick="download()">Save</button></a>
+    
+    </span>
+  </div>
+
+  <canvas></canvas>
+
+  <div class="mousePointer"></div>
+
+  <script src='js/main.js'></script>
+</body>
+</html>
